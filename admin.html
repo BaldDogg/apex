@@ -201,19 +201,14 @@
     </div>
 
     <script>
-        // Этот скрипт пока работает как "заглушка". 
-        // Позже мы подключим его к нашему Node.js серверу!
 
         document.getElementById('loginForm').addEventListener('submit', function (e) {
             e.preventDefault(); // Останавливаем перезагрузку страницы
 
-            // Здесь мы будем отправлять логин и пароль на сервер для проверки.
-            // Пока что просто сымитируем успешный вход для проверки визуала:
 
             const login = document.getElementById('adminLogin').value;
             const pass = document.getElementById('adminPassword').value;
 
-            // ВРЕМЕННАЯ ПРОВЕРКА (Потом уберем)
             if (login === 'admin' && pass === '123') {
                 document.getElementById('loginScreen').style.display = 'none';
                 document.getElementById('dashboardScreen').style.display = 'block';
@@ -224,7 +219,6 @@
         });
 
         function logout() {
-            // Кнопка выхода возвращает нас на экран логина
             document.getElementById('loginScreen').style.display = 'block';
             document.getElementById('dashboardScreen').style.display = 'none';
             document.getElementById('adminPassword').value = '';
