@@ -1,0 +1,32 @@
+.numbers__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.numbers .section-title {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--color-muted-title);
+}
+
+.numbers-card {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.numbers-card__title {
+    color: var(--color-muted-accent);
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.numbers-card__text {
+    color: var(--color-muted-title);
+    margin-top: 0;
+    font-size: 1.3rem;
+}

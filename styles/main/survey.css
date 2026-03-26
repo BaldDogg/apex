@@ -1,0 +1,91 @@
+.survey-form,
+.lead-form {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+    padding: 40px 0px;
+    max-width: 900px;
+    margin: 0 5%;
+}
+
+.survey__subtitle,
+.survey__note,
+.contact__subtitle {
+    font-size: 1.25rem;
+    color: #666F7D;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    max-width: 900px;
+}
+
+.survey__note,
+.contact__subtitle {
+    margin-bottom: 40px;
+}
+
+.survey-form .form-group,
+.lead-form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.survey-form label,
+.lead-form label {
+    font-weight: 600;
+    color: var(--color-title);
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+
+.radio-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 10px;
+}
+
+.survey-form .radio-group label {
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--color-blue);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.survey-form .radio-group input[type="radio"] {
+    cursor: pointer;
+}
+
+.survey-form input[type="text"],
+.lead-form input[type="text"],
+.lead-form input[type="tel"],
+.lead-form input[type="email"],
+.lead-form textarea {
+    padding: 15px 20px;
+    border: 1px solid #D8DEE4;
+    border-radius: 12px;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s;
+    width: 100%;
+}
+
+.survey-form input[type="text"]:focus,
+.lead-form input[type="text"]:focus,
+.lead-form input[type="tel"]:focus,
+.lead-form input[type="email"]:focus,
+.lead-form textarea:focus {
+    border-color: var(--color-muted-accent);
+}
+
+.lead-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}

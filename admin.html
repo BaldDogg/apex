@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEX MIND - Панель администратора</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <style>
+        /* БАЗОВЫЕ СТИЛИ АДМИНКИ */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        h1,
+        h2 {
+            color: #1B2A3E;
+        }
+
+        /* ЭКРАН ВХОДА */
+        #loginScreen {
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+            width: 100%;
+            max-width: 400px;
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-family: inherit;
+            box-sizing: border-box;
+        }
+
+        .btn {
+            background-color: #B88E24;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #9a761e;
+        }
+
+        /* ПАНЕЛЬ УПРАВЛЕНИЯ (СКРЫТА ПО УМОЛЧАНИЮ) */
+        #dashboardScreen {
+            display: none;
+            /* Скрыто, пока не введем пароль */
+            width: 100%;
+        }
+
+        .dashboard-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+            margin-bottom: 30px;
+        }
+
+        .logout-btn {
+            background: #e74c3c;
+            width: auto;
+        }
+
+        /* СТИЛИ ДЛЯ ТАБЛИЦ */
+        .table-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+            margin-bottom: 30px;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+            color: #1B2A3E;
+        }
+
+        tr:hover {
+            background-color: #f4f6f9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="loginScreen">
+        <h2>Вход в панель APEX MIND</h2>
+        <form id="loginForm">
+            <div class="input-group">
+                <label>Логин администратора</label>
+                <input type="text" id="adminLogin" required placeholder="admin">
+            </div>
+            <div class="input-group">
+                <label>Пароль</label>
+                <input type="password" id="adminPassword" required placeholder="Введите пароль">
+            </div>
+            <button type="submit" class="btn">Войти</button>
+            <p id="loginError" style="color: red; display: none; margin-top: 15px;">Неверный логин или пароль!</p>
+        </form>
+    </div>
+
+    <div id="dashboardScreen" class="container">
+        <div class="dashboard-header">
+            <h1>Панель администратора</h1>
+            <button class="btn logout-btn" onclick="logout()">Выйти</button>
+        </div>
+
+        <div class="table-container">
+            <h2>Последние заявки на пилот</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Дата</th>
+                        <th>Имя</th>
+                        <th>Компания</th>
+                        <th>Телефон</th>
+                        <th>Email</th>
+                        <th>Сообщение</th>
+                    </tr>
+                </thead>
+                <tbody id="leadsTableBody">
+                    <tr>
+                        <td colspan="6">Загрузка данных...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="table-container">
+            <h2>Статистика опросов (Всего пройдено: <span id="totalSurveys">0</span>)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Вопрос</th>
+                        <th>Средний балл (от 1 до 5)</th>
+                    </tr>
+                </thead>
+                <tbody id="surveyTableBody">
+                    <tr>
+                        <td colspan="2">Загрузка данных...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        // Этот скрипт пока работает как "заглушка". 
+        // Позже мы подключим его к нашему Node.js серверу!
+
+        document.getElementById('loginForm').addEventListener('submit', function (e) {
+            e.preventDefault(); // Останавливаем перезагрузку страницы
+
+            // Здесь мы будем отправлять логин и пароль на сервер для проверки.
+            // Пока что просто сымитируем успешный вход для проверки визуала:
+
+            const login = document.getElementById('adminLogin').value;
+            const pass = document.getElementById('adminPassword').value;
+
+            // ВРЕМЕННАЯ ПРОВЕРКА (Потом уберем)
+            if (login === 'admin' && pass === '123') {
+                document.getElementById('loginScreen').style.display = 'none';
+                document.getElementById('dashboardScreen').style.display = 'block';
+                // Тут мы будем запрашивать данные из базы
+            } else {
+                document.getElementById('loginError').style.display = 'block';
+            }
+        });
+
+        function logout() {
+            // Кнопка выхода возвращает нас на экран логина
+            document.getElementById('loginScreen').style.display = 'block';
+            document.getElementById('dashboardScreen').style.display = 'none';
+            document.getElementById('adminPassword').value = '';
+            document.getElementById('loginError').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
