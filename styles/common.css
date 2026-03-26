@@ -1,0 +1,31 @@
+@import url(./fonts.css);
+@import url(./header.css);
+@import url(./footer.css);
+
+:root {
+    --color-accent: #E5B314;
+    --color-muted-accent: #b0861d;
+    --color-title: #0B1B36;
+    --color-muted-title: #B0B0B0;
+    --color-text: #424d5f;
+    --color-white: #FFFFFF;
+    --color-blue: #1D3958;
+    --color-divider: #e3e3e3;
+}
+
+* {
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.7rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}

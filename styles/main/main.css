@@ -1,0 +1,22 @@
+@import url(./hero.css);
+@import url(./info-cards.css);
+@import url(./problems.css);
+
+.btn {
+    padding: 15px 30px;
+    font-size: large;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 30px;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid var(--color-divider);
+    margin: 60px;
+    width: 90%;
+}

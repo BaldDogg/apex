@@ -1,0 +1,34 @@
+.hero {
+    color: var(--color-muted-title);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.accent {
+    color: var(--color-muted-accent);
+}
+
+.hero__title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero__subtitle {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.hero__text {
+    font-size: 1.2rem;
+}
+
+.btn-hero {
+    background-color: var(--color-white);
+    color: var(--color-title);
+}
+
+.btn-hero:hover {
+    background-color: var(--color-accent);
+    transform: translateY(-2px);
+}

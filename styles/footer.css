@@ -1,0 +1,45 @@
+.footer {
+    background-color: #ffffff;
+    padding: 60px 0 30px 0;
+    text-align: center;
+}
+
+.footer__contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+    color: var(--color-title);
+}
+
+.contact-item a {
+    color: var(--color-title);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-item a:hover {
+    color: var(--color-muted-accent);
+}
+
+.footer__slogan {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--color-title);
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.footer__copy {
+    color: var(--color-muted-title);
+    font-size: 0.9rem;
+}

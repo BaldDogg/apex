@@ -1,0 +1,39 @@
+.problems {
+    color: var(--color-blue);
+}
+
+.problems__grid {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.stat-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    border-left: solid 8px var(--color-accent);
+}
+
+.stat-card__title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.stat-card__text {
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.stat-card__accent {
+    margin-top: 0;
+    color: var(--color-muted-accent);
+}
+
+.problems__footer-text {
+    text-align: center;
+    font-size: 1.25rem;
+}
