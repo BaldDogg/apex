@@ -3,6 +3,7 @@
 @import url(./problems.css);
 @import url(./numbers.css);
 @import url(./survey.css);
+@import url(./mobile.css);
 
 .btn {
     padding: 15px 30px;

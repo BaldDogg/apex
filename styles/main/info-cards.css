@@ -4,9 +4,7 @@
 }
 
 .how-it-works__grid,
-.numbers__grid,
-.application__grid,
-.difference__grid {
+.application__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -60,4 +58,15 @@
     color: var(--color-text);
     margin-top: 0;
     font-size: 1.3rem;
+}
+
+@media (max-width: 800px) {
+
+    .how-it-works__grid,
+    .application__grid .solutions__grid,
+    .difference__grid,
+    .superiority__grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+    }
 }

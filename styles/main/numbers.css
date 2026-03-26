@@ -13,7 +13,6 @@
 .numbers-card {
     display: flex;
     flex-direction: column;
-    padding: 30px;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -29,4 +28,8 @@
     color: var(--color-muted-title);
     margin-top: 0;
     font-size: 1.3rem;
+}
+
+.asterisk {
+    font-size: small;
 }

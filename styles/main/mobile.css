@@ -1,0 +1,91 @@
+@media (max-width: 800px) {
+    * {
+        margin: 0 5px;
+    }
+
+    .header__container {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 20px;
+        gap: 15px;
+    }
+
+    .header__nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 15px;
+        font-size: 0.9rem;
+    }
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero__title {
+        font-size: 2rem;
+    }
+
+    .hero__subtitle {
+        font-size: 1.3rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+
+    .how-it-works__grid,
+    .application__grid,
+    .difference__grid,
+    .solutions__grid,
+    .superiority__grid,
+    .problems__grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .numbers__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .stat-card {
+        padding: 15px;
+        border-left-width: 5px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .numbers-card__title {
+        font-size: 3rem;
+    }
+
+    .survey-form,
+    .lead-form {
+        padding: 25px 20px;
+        margin: 0;
+        border-radius: 15px;
+    }
+
+    .radio-group {
+        gap: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer__contacts {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        text-align: left;
+    }
+
+    .contact-item {
+        font-size: 1rem;
+    }
+
+    .footer__slogan {
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+    }
+}
