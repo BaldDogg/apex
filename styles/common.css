@@ -11,6 +11,8 @@
     --color-white: #FFFFFF;
     --color-blue: #1D3958;
     --color-divider: #e3e3e3;
+    --color-admin: #ebecf1;
+    --color-admin-table: #ecefff;
 }
 
 * {
@@ -30,4 +32,11 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+@media (max-width: 800px) {
+    .container {
+        margin: 0 20px;
+        padding: 0 20px;
+    }
 }

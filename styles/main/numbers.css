@@ -7,7 +7,7 @@
 .numbers .section-title {
     text-align: center;
     font-size: 3rem;
-    color: var(--color-muted-title);
+    color: var(--color-title);
 }
 
 .numbers-card {
@@ -21,15 +21,17 @@
 .numbers-card__title {
     color: var(--color-muted-accent);
     font-size: 4rem;
+    margin-top: 0;
     margin-bottom: 20px;
 }
 
 .numbers-card__text {
-    color: var(--color-muted-title);
+    color: var(--color-text);
     margin-top: 0;
     font-size: 1.3rem;
 }
 
 .asterisk {
     font-size: small;
+    color: var(--color-muted-title);
 }

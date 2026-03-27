@@ -60,13 +60,24 @@
     font-size: 1.3rem;
 }
 
-@media (max-width: 800px) {
+.solutions-card__image {
+    width: 64px;
+    height: 64px;
+    margin: 0;
+    object-fit: contain;
+}
 
-    .how-it-works__grid,
-    .application__grid .solutions__grid,
-    .difference__grid,
-    .superiority__grid {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 30px;
-    }
+.how-card__image,
+.superiority-card__image {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    object-fit: contain;
+}
+
+.application-card__image,
+.difference-card__image {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
 }

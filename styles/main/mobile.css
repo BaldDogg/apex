@@ -1,7 +1,4 @@
 @media (max-width: 800px) {
-    * {
-        margin: 0 5px;
-    }
 
     .header__container {
         flex-direction: column;
@@ -87,5 +84,11 @@
     .footer__slogan {
         font-size: 1.5rem;
         margin-bottom: 40px;
+    }
+
+    .divider {
+        margin: 0;
+        padding: 0;
+        width: 100%;
     }
 }

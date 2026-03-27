@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- header -->
     <header class="header">
         <div class="container header__container">
             <div class="header__logo">APEX MIND</div>
@@ -18,21 +19,22 @@
                 <li><a href="#how-it-works" class="header__link">Как работает</a></li>
                 <li><a href="#application" class="header__link">Применение</a></li>
                 <li><a href="#survey" class="header__link">Опрос</a></li>
-                <li><a href="#contacts" class="header__link">Контакты</a></li>
+                <li><a href="#footer__contacts" class="header__link">Контакты</a></li>
             </nav>
         </div>
     </header>
 
     <main>
+        <!-- hero -->
         <section class="hero" id="about">
             <div class="container hero__container">
                 <h1 class="hero__title">Adaptive Plan Bot <span class="accent">+</span> APEX MIND</h1>
                 <h2 class="hero__subtitle">Интеллектуальная экосистема управления строительством</h2>
                 <p class="hero__text">Стройка, которая думает сама. Руководители, которые видят на шаг вперёд.</p>
-                <button class="btn btn-hero">Станьте пилотным партнёром</button>
+                <button id="scrollToFormBtn" class="btn btn-hero">Станьте пилотным партнёром</button>
             </div>
         </section>
-
+        <!-- Почему 15-30% бюджета уходят впустую? -->
         <section class="problems" id="problems">
             <div class="container">
                 <h2 class="section-title">Почему 15-30% бюджета уходят впустую?</h2>
@@ -57,13 +59,14 @@
             </div>
             <hr class="divider">
         </section>
-
+        <!-- Наше решение — два продукта, одна экосистема -->
         <section class="solutions" id="solution">
             <div class="container">
                 <h2 class="section-title">Наше решение — два продукта, одна экосистема</h2>
                 <div class="solutions__grid">
                     <article class="solutions-card">
-                        <img src="" alt="Иконка Adaptive Plan Bot" class="solutions-card__img">
+                        <img src="assets/robot-solid-full.svg" alt="Иконка Adaptive Plan Bot"
+                             class="solutions-card__image">
                         <h3 class="solutions-card__title">Adaptive Plan Bot</h3>
                         <span class="solutions-card__subtitle">AI-система адаптивного планирования.</span>
                         <p class="solutions-card__text">Автоматически строит и перестраивает планы в реальном времени с
@@ -71,7 +74,7 @@
                             дней.</p>
                     </article>
                     <article class="solutions-card">
-                        <img src="" alt="Иконка APEX MIND" class="solutions-card__img">
+                        <img src="assets/brain-solid-full.svg" alt="Иконка APEX MIND" class="solutions-card__image">
                         <h3 class="solutions-card__title">APEX MIND</h3>
                         <span class="solutions-card__subtitle">Система управления сложностью.</span>
                         <p class="solutions-card__text">Цифровые двойники руководителей, прогноз рисков, обоснованные
@@ -81,42 +84,42 @@
             </div>
             <hr class="divider">
         </section>
-
+        <!-- Как это работает -->
         <section class="how-it-works" id="how-it-works">
             <div class="container">
                 <h2 class="section-title">Как это работает</h2>
                 <div class="how-it-works__grid">
                     <article class="how-card">
-                        <img src="" alt="Единая картина">
+                        <img src="assets/database-solid-full.svg" class="how-card__image" alt="Единая картина">
                         <h3 class="how-card__title">Единая картина</h3>
                         <p class="how-card__text">BIM, IoT, ERP, погодные API — все данные стекаются в один контур.</p>
                     </article>
                     <article class="how-card">
-                        <img src="" alt="Интеллектуальное ядро">
+                        <img src="assets/sitemap-solid-full.svg" class="how-card__image" alt="Интеллектуальное ядро">
                         <h3 class="how-card__title">Интеллектуальное ядро</h3>
                         <p class="how-card__text">Граф опыта, семантическая модель — система понимает взаимосвязи и
                             учится на истории.</p>
                     </article>
                     <article class="how-card">
-                        <img src="" alt="Цифровые двойники">
+                        <img src="assets/user-tie-solid-full.svg" class="how-card__image" alt="Цифровые двойники">
                         <h3 class="how-card__title">Цифровые двойники</h3>
                         <p class="how-card__text">Каждый руководитель получает персонального ассистента, который видит
                             контекст и предупреждает о рисках.</p>
                     </article>
                     <article class="how-card">
-                        <img src="" alt="ИИ-агенты">
+                        <img src="assets/microchip-solid-full.svg" class="how-card__image" alt="ИИ-агенты">
                         <h3 class="how-card__title">ИИ-агенты</h3>
                         <p class="how-card__text">Рутина автоматизирована: заказ ресурсов, контроль качества, отчёты.
                         </p>
                     </article>
                     <article class="how-card">
-                        <img src="" alt="Человек утверждает">
+                        <img src="assets/check-double-solid-full.svg" class="how-card__image" alt="Человек утверждает">
                         <h3 class="how-card__title">Человек утверждает</h3>
                         <p class="how-card__text">Ключевые решения принимает руководитель, система берёт на себя всё
                             остальное.</p>
                     </article>
                     <article class="how-card">
-                        <img src="" alt="Непрерывное обучение">
+                        <img src="assets/chart-line-solid-full.svg" class="how-card__image" alt="Непрерывное обучение">
                         <h3 class="how-card__title">Непрерывное обучение</h3>
                         <p class="how-card__text">Каждое решение фиксируется в базе знаний — опыт накапливается и
                             тиражируется.</p>
@@ -125,7 +128,7 @@
             </div>
             <hr class="divider">
         </section>
-
+        <!-- Цифры, которые говорят сами за себя  -->
         <section class="numbers" id="numbers">
             <div class="container">
                 <h2 class="section-title">Цифры, которые говорят сами за себя <span class="asterisk">*ожидание</span>
@@ -155,31 +158,32 @@
             </div>
             <hr class="divider">
         </section>
-
+        <!-- Для кого это -->
         <section class="application" id="application">
             <div class="container">
                 <h2 class="section-title">Для кого это</h2>
                 <div class="application__grid">
                     <article class="application-card">
-                        <img src="" alt="Генподрядчики">
+                        <img src="assets/helmet-safety-solid-full.svg" class="application-card__image"
+                             alt="Генподрядчики">
                         <h3 class="application-card__title">Генподрядчики</h3>
                         <p class="application-card__text">Снижение простоев, экономия на логистике, меньше штрафов,
                             больше прибыли.</p>
                     </article>
                     <article class="application-card">
-                        <img src="" alt="Заказчики">
+                        <img src="assets/building-solid-full.svg" class="application-card__image" alt="Заказчики">
                         <h3 class="application-card__title">Заказчики / девелоперы</h3>
                         <p class="application-card__text">Реальная прозрачность, точные прогнозы сроков, снижение
                             инвестиционных рисков.</p>
                     </article>
                     <article class="application-card">
-                        <img src="" alt="Прорабы">
+                        <img src="assets/clipboard-list-solid-full.svg" class="application-card__image" alt="Прорабы">
                         <h3 class="application-card__title">Прорабы и планировщики</h3>
                         <p class="application-card__text">Управление исключениями вместо рутины, автоматические отчёты,
                             мобильное приложение.</p>
                     </article>
                     <article class="application-card">
-                        <img src="" alt="PMO">
+                        <img src="assets/diagram-project-solid-full.svg" class="application-card__image" alt="PMO">
                         <h3 class="application-card__title">Проектные офисы (PMO)</h3>
                         <p class="application-card__text">Единый инструмент контроля качества решений по портфелю
                             проектов.</p>
@@ -188,44 +192,54 @@
             </div>
             <hr class="divider">
         </section>
-
+        <!-- Чем мы отличаемся -->
         <section class="difference" id="difference">
             <div class="container">
                 <h2 class="section-title">Чем мы отличаемся</h2>
                 <div class="difference__grid">
                     <article class="difference-card">
+                        <img src="assets/circle-xmark-solid-full.svg" class="difference-card__image"
+                             alt="vs Oracle / MS">
                         <h3 class="difference-card__title">vs Oracle Primavera / MS Project</h3>
                         <p class="difference-card__text">Мы не строим жёсткие графики — мы учимся на вашем опыте,
                             работаем с неопределённостью и предлагаем решения, а не просто планы.</p>
                     </article>
                     <article class="difference-card">
+                        <img src="assets/circle-check-solid-full.svg" class="difference-card__image" alt="vs 1C">
                         <h3 class="difference-card__title">vs Кастомные разработки на 1С</h3>
                         <p class="difference-card__text">Масштабируемое SaaS-решение, внедрение в 5 раз быстрее,
                             постоянное обновление.</p>
                     </article>
                     <article class="difference-card">
+                        <img src="assets/flag-solid-full.svg" class="difference-card__image" alt="vs AI-платформы">
                         <h3 class="difference-card__title">vs Зарубежные AI-платформы</h3>
                         <p class="difference-card__text">Понимаем российскую специфику, работаем с кириллицей,
                             соответствуем 152-ФЗ.</p>
                     </article>
                 </div>
-
+                <!-- Технологическое превосходство -->
                 <h2 class="section-title" style="margin-top: 50px;">Технологическое превосходство</h2>
                 <div class="superiority__grid">
                     <article class="superiority-card">
+                        <img src="assets/rocket-solid-full.svg" class="superiority-card__image"
+                             alt="Быстро развивающаяся модель">
                         <h3 class="superiority-card__title">Лёгкая и дообучаемая модель</h3>
                         <p class="superiority-card__text">Высокая скорость обучения, минимальные требования к ресурсам.
                         </p>
                     </article>
                     <article class="superiority-card">
+                        <img src="assets/puzzle-piece-solid-full.svg" class="superiority-card__image"
+                             alt="Модульная архитектура">
                         <h3 class="superiority-card__title">Модульная архитектура</h3>
                         <p class="superiority-card__text">Поэтапное внедрение — начинаем с самых приоритетных задач.</p>
                     </article>
                     <article class="superiority-card">
+                        <img src="assets/plug-solid-full.svg" class="superiority-card__image" alt="Полная интеграция">
                         <h3 class="superiority-card__title">Полная интеграция</h3>
                         <p class="superiority-card__text">Не требует замены текущих систем — работает поверх них.</p>
                     </article>
                     <article class="superiority-card">
+                        <img src="assets/gavel-solid-full.svg" class="superiority-card__image" alt="Регламенты">
                         <h3 class="superiority-card__title">Работает от регламентов</h3>
                         <p class="superiority-card__text">Учитывает отраслевые стандарты и внутренние правила компании.
                         </p>
@@ -234,7 +248,7 @@
             </div>
             <hr class="divider">
         </section>
-
+        <!-- Опрос -->
         <section class="survey" id="survey">
             <div class="container">
                 <h2 class="section-title">Помогите нам стать лучше</h2>
@@ -244,17 +258,17 @@
 
                 <form id="surveyForm" class="survey-form">
                     <div class="form-group">
-                        <label for="surveyPosition">Ваша должность (необязательный пункт)</label>
+                        <label for="surveyPosition">Ваша должность (необязательно)</label>
                         <input type="text" id="surveyPosition" name="position"
                                placeholder="Например: руководитель проекта">
                     </div>
                     <div class="form-group">
-                        <label for="surveyCompany">Компания (необязательный пункт)</label>
+                        <label for="surveyCompany">Компания (необязательно)</label>
                         <input type="text" id="surveyCompany" name="company" placeholder="Название вашей организации">
                     </div>
 
                     <div class="form-group">
-                        <label>1. Часто ли вы сталкиваетесь с тем, что информация о ходе проекта приходит с
+                        <label>1. Часто ли вы сталкиваетесь с ситуацией, когда информация о ходе проекта поступает с
                             опозданием?</label>
                         <div class="radio-group">
                             <label><input type="radio" name="q1" value="1"> 1 (никогда)</label>
@@ -266,8 +280,8 @@
                     </div>
 
                     <div class="form-group">
-                        <label>2. Как вы считаете, перегружены ли руководители рутиной в ущерб стратегическим
-                            планам?</label>
+                        <label>2. Считаете ли вы, что ваши руководители перегружены рутиной в ущерб стратегическим
+                            задачам?</label>
                         <div class="radio-group">
                             <label><input type="radio" name="q2" value="1"> 1 (нет)</label>
                             <label><input type="radio" name="q2" value="2"> 2</label>
@@ -278,8 +292,8 @@
                     </div>
 
                     <div class="form-group">
-                        <label>3. Бывало ли так, что увольнение ключевого сотрудника вело к потере важной информации по
-                            проекту?</label>
+                        <label>3. Случалось ли, что уход ключевого сотрудника приводил к потере критически важной
+                            информации о проекте?</label>
                         <div class="radio-group">
                             <label><input type="radio" name="q3" value="1"> 1 (никогда)</label>
                             <label><input type="radio" name="q3" value="2"> 2</label>
@@ -290,73 +304,78 @@
                     </div>
 
                     <div class="form-group">
-                        <label>4. Случаются ли на проектах конфликты из-за несогласованности рабочих данных?</label>
+                        <label>4. Возникают ли на ваших проектах конфликты между участниками из-за несогласованности
+                            данных?</label>
                         <div class="radio-group">
                             <label><input type="radio" name="q4" value="1"> 1 (никогда)</label>
                             <label><input type="radio" name="q4" value="2"> 2</label>
                             <label><input type="radio" name="q4" value="3"> 3</label>
                             <label><input type="radio" name="q4" value="4"> 4</label>
-                            <label><input type="radio" name="q4" value="5"> 5 (постоянно)</label>
+                            <label><input type="radio" name="q4" value="5"> 5 (часто)</label>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label>5. Приходится ли регулярно тушить «пожары» вместо работы на опережение?</label>
+                        <label>5. Приходится ли вам регулярно тушить "пожары" вместо того, чтобы работать на
+                            опережение?</label>
                         <div class="radio-group">
                             <label><input type="radio" name="q5" value="1"> 1 (никогда)</label>
                             <label><input type="radio" name="q5" value="2"> 2</label>
                             <label><input type="radio" name="q5" value="3"> 3</label>
                             <label><input type="radio" name="q5" value="4"> 4</label>
-                            <label><input type="radio" name="q5" value="5"> 5 (почти ежедневно)</label>
+                            <label><input type="radio" name="q5" value="5"> 5 (почти каждый день)</label>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label>6. Уверены ли вы, что стандартные инструменты (MS Project, Excel) вытягивают сложность
-                            ваших проектов?</label>
+                        <label>6. Уверены ли вы, что текущие инструменты планирования (MS Project, Excel) справляются со
+                            сложностью ваших проектов?</label>
                         <div class="radio-group">
                             <label><input type="radio" name="q6" value="1"> 1 (полностью уверен)</label>
                             <label><input type="radio" name="q6" value="2"> 2</label>
                             <label><input type="radio" name="q6" value="3"> 3</label>
                             <label><input type="radio" name="q6" value="4"> 4</label>
-                            <label><input type="radio" name="q6" value="5"> 5 (совсем не вытягивают)</label>
+                            <label><input type="radio" name="q6" value="5"> 5 (совсем не справляются)</label>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label>7. Насколько точно сегодня вы способны спрогнозировать сроки окончания проекта?</label>
+                        <label>7. Оцените, насколько точно вы можете спрогнозировать сроки завершения проекта
+                            сегодня?</label>
                         <div class="radio-group">
-                            <label><input type="radio" name="q7" value="1"> 1 (максимально точно)</label>
+                            <label><input type="radio" name="q7" value="1"> 1 (очень точно)</label>
                             <label><input type="radio" name="q7" value="2"> 2</label>
                             <label><input type="radio" name="q7" value="3"> 3</label>
                             <label><input type="radio" name="q7" value="4"> 4</label>
-                            <label><input type="radio" name="q7" value="5"> 5 (почти невозможно)</label>
+                            <label><input type="radio" name="q7" value="5"> 5 (практически не могу)</label>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label>8. Часто ли случаются простои из-за задержек поставок или нехватки ресурсов?</label>
+                        <label>8. Часто ли возникают простои из-за несвоевременной поставки материалов или недоступности
+                            ресурсов?</label>
                         <div class="radio-group">
                             <label><input type="radio" name="q8" value="1"> 1 (никогда)</label>
                             <label><input type="radio" name="q8" value="2"> 2</label>
                             <label><input type="radio" name="q8" value="3"> 3</label>
                             <label><input type="radio" name="q8" value="4"> 4</label>
-                            <label><input type="radio" name="q8" value="5"> 5 (регулярно)</label>
+                            <label><input type="radio" name="q8" value="5"> 5 (постоянно)</label>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label>9. Внедрены ли технологии ВІМ и применяются ли они для управления стройкой?</label>
+                        <label>9. Внедрены ли у вас BIM-технологии, и используют ли их для управления
+                            строительством?</label>
                         <div class="radio-group">
                             <label><input type="radio" name="q9" value="1"> 1 (нет)</label>
                             <label><input type="radio" name="q9" value="2"> 2 (частично)</label>
-                            <label><input type="radio" name="q9" value="3"> 3 (активно применяем)</label>
+                            <label><input type="radio" name="q9" value="3"> 3 (активно используем)</label>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label>10. Есть ли интерес к системам, автоматически предлагающим решения при срывах
-                            плана?</label>
+                        <label>10. Заинтересованы ли вы в симтемах, которые автоматически предлагают корректирующие
+                            решения при отклонениях от плана?</label>
                         <div class="radio-group">
                             <label><input type="radio" name="q10" value="1"> 1 (неинтересно)</label>
                             <label><input type="radio" name="q10" value="2"> 2</label>
@@ -371,7 +390,7 @@
             </div>
             <hr class="divider">
         </section>
-
+        <!-- заявка -->
         <section class="contact-form-section" id="contacts">
             <div class="container">
                 <h2 class="section-title">Оставьте свою заявку</h2>
@@ -400,7 +419,7 @@
                         <input type="email" id="leadEmail" name="email" required>
                     </div>
                     <div class="form-group">
-                        <label for="leadMessage">Текст сообщения (до 1000 символов)</label>
+                        <label for="leadMessage">Текст сообщения</label>
                         <textarea id="leadMessage" name="message" maxlength="1000"
                                   placeholder="Напишите, что именно вас интересует..."></textarea>
                     </div>
@@ -409,12 +428,12 @@
             </div>
             <hr class="divider">
         </section>
-
+        <!-- footer с контактами -->
         <footer class="footer">
             <div class="container">
                 <h2 class="section-title">Контакты</h2>
-
-                <div class="footer__contacts">
+                <!-- Здесь сгенерировала SVG-код картинок из тз, т.к. не нашла в fontawesome -->
+                <div class="footer__contacts" id="footer__contacts">
                     <div class="contact-item">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--color-muted-accent)">
                             <path
@@ -457,5 +476,6 @@
                 </div>
             </div>
         </footer>
+        <script src="scripts/main.js"></script>
 
 </html>

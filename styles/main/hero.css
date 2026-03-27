@@ -2,6 +2,10 @@
     color: var(--color-muted-title);
     padding: 100px 0;
     text-align: center;
+    background-image: linear-gradient(rgba(11, 27, 54, 0.7), rgba(11, 27, 54, 0.9)), url(../../assets/hero-background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .accent {
