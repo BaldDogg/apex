@@ -39,4 +39,8 @@ body {
         margin: 0 20px;
         padding: 0 20px;
     }
+
+    * {
+        scroll-padding-top: 150px;
+    }
 }
